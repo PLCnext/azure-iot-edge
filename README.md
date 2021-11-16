@@ -1,4 +1,4 @@
-# Azure-iot-edge on AXC F 2152 FW 2020.3
+# Azure-iot-edge on AXC F 2152 FW 2021.0 LTS
 
 ### An 8 gb - PLCnext SD card is nessesary 
 
@@ -36,6 +36,13 @@ reboot
 
 
 # IMPORTANT
+## FOR AXC F 3152
+execute this command as root!
+
+```bash
+sudo ln -sv /lib /lib64
+```
+
 
 Remember to Disable nginx or modify edge* from port 443 -> 44X
 If you stop nginx, you'll lose the webbased management
